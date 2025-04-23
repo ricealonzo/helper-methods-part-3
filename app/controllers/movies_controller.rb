@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+
+  
   def new
     @movie = Movie.new
   end
@@ -26,7 +28,7 @@ class MoviesController < ApplicationController
 
       redirect_to movies_url, notice: "Movie was successfully created."
     else
-      render "new" , alert: "Movie Was ot saved "
+      render "new" 
     end
   end
 
